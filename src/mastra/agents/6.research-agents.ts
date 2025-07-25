@@ -1,8 +1,6 @@
 import { Agent } from "@mastra/core/agent";
 import { createVectorQueryTool, createGraphRAGTool } from "@mastra/rag";
 import { createGoogleGenerativeAI } from '@ai-sdk/google';
-import { PgVector } from "@mastra/pg";
-import { Mastra } from "@mastra/core";
 
 const google = createGoogleGenerativeAI({
   apiKey: "AIzaSyD9xkywZ7I3cFC8I2-41gtk42jxxZoDYNo",
@@ -23,8 +21,4 @@ export const ragAgent = new Agent({
   tools: {
     vectorQueryTool,
   },
-});
-
-const pgVector = new PgVector({
-  connectionString: "postgresql://neondb_owner:npg_OdHP37TWgpwS@ep-broad-waterfall-a1oyt1oy-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require",
 });
