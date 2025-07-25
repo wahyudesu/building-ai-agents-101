@@ -9,12 +9,11 @@ const google = createGoogleGenerativeAI({
 });
 
 // Create a tool for semantic search over our paper embeddings
-const pineconeQueryTool = createVectorQueryTool({
-  vectorStoreName: "pinecone",
-  indexName: "mycollection",
+const vectorQueryTool = createVectorQueryTool({
+  vectorStoreName: "pgVector",
+  indexName: "papers",
   model: google.textEmbeddingModel('text-embedding-004'),
 });
-
  
 export const ragAgent = new Agent({
   name: "RAG Agent",
@@ -22,22 +21,10 @@ export const ragAgent = new Agent({
     "You are a helpful assistant that answers questions based on the provided context. Keep your answers concise and relevant.",
   model: google('gemini-2.5-flash-lite'),
   tools: {
-    pineconeQueryTool,
+    vectorQueryTool,
   },
 });
 
 const pgVector = new PgVector({
   connectionString: "postgresql://neondb_owner:npg_OdHP37TWgpwS@ep-broad-waterfall-a1oyt1oy-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require",
 });
-
-export const mastra = new Mastra({
-  agents: { ragAgent },
-  vectors: { pgVector },
-});
- 
-const agent = mastra.getAgent("ragAgent");
-
-const prompt = `dimana alamat wahyu?`;
- 
-const completion = await agent.generate(prompt);
-console.log(completion.text);

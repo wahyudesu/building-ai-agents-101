@@ -18,10 +18,14 @@
   },
   "dependencies": {
     "@ai-sdk/google": "^1.2.22",
+    "@ai-sdk/groq": "^1.2.9",
     "@mastra/core": "^0.11.1",
     "@mastra/libsql": "^0.11.2",
     "@mastra/loggers": "^0.10.4",
     "@mastra/memory": "^0.11.5",
+    "@mastra/pg": "^0.12.5",
+    "@mastra/rag": "^1.0.4",
+    "ai": "^4.3.19",
     "zod": "^3.25.76"
   },
   "devDependencies": {
