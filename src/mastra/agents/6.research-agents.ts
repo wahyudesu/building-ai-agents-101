@@ -3,7 +3,7 @@ import { createVectorQueryTool, createGraphRAGTool } from "@mastra/rag";
 import { createGoogleGenerativeAI } from '@ai-sdk/google';
 
 const google = createGoogleGenerativeAI({
-  apiKey: "AIzaSyD9xkywZ7I3cFC8I2-41gtk42jxxZoDYNo",
+  apiKey: process.env.GOOGLE_GENERATIVE_AI_API_KEY,
 });
 
 // Create a tool for semantic search over our paper embeddings
