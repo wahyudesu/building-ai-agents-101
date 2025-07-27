@@ -52,11 +52,12 @@ npx tsx src/mastra/rag.ts
 ```
 
 ## Deploy to production
-- publish to github as fork 
+- publish to github as fork
 - go to https://mastra.ai/cloud and login using github
 - select repo and deploy
 
-(Read more...)[https://mastra.ai/en/docs/deployment/overview]
+[Read more...](https://mastra.ai/en/docs/deployment/overview)
+
 
 ---
 
