@@ -5,7 +5,7 @@ Build AI agents in a simple way by learning through examples (more agents coming
 ![Alt Text](image.png)
 
 ### What you'll learn:
-- Build simple AI agents using Mastra
+- Build simple AI agents in Typescript
 - Create and integrate custom tools into agents
 - Use RAG (Retrieval-Augmented Generation) as tool in agents
 - What is the complex workflow like
