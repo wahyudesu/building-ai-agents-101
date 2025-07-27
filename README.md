@@ -2,7 +2,9 @@
 
 Build AI agents step by step by step in a simple way using Mastra
 
-What you'll learn:
+![Alt Text](image.png)
+
+### What you'll learn:
 - Build simple AI agents using Mastra
 - Create and integrate custom tools into agents
 - Use RAG (Retrieval-Augmented Generation) as tool in agents
@@ -55,3 +57,8 @@ npx tsx src/mastra/rag.ts
 - select repo and deploy
 
 (Read more...)[https://mastra.ai/en/docs/deployment/overview]
+
+---
+
+## Why Mastra 
+Mastra is the easiest way to build a production AI application, built by the team that brought you Gatsby. We provide a complete set of AI primitives: workflows for complex operations, agents for autonomous decisions, RAG for knowledge integration, and evals for quality & accuracy. Mastra is open-source, modular, and built in Typescript for product developers. You can deploy Mastra on any cloud, and it gives you a straightforward syntax to solve the hardest problems building with AI: human-in-the-loop workflows, agent memory and tool selection, and output quality.

@@ -1,11 +1,10 @@
 import { Agent } from "@mastra/core/agent";
 import { google } from '@ai-sdk/google';
  
- 
 // Agent that generates multiple holiday options
 // Returns a JSON array of locations and descriptions
 export const summaryTravelAgent = new Agent({
-  name: "summaryTravelAgent",
+  name: "summary travel agent",
   model: google('gemini-2.5-flash-lite'),
   instructions: `
   You are a travel agent who is given a user prompt about what kind of holiday they want to go on.
@@ -18,7 +17,7 @@ export const summaryTravelAgent = new Agent({
 // Agent that creates detailed travel plans
 // Takes the selected option and generates a comprehensive itinerary
 export const travelAgent = new Agent({
-  name: "travelAgent",
+  name: "travel agent",
   model: google('gemini-2.5-flash-lite'),
   instructions: `
   You are a travel agent who is given a user prompt about what kind of holiday they want to go on. A summary of the plan is provided as well as the location.

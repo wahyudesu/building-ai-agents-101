@@ -4,7 +4,7 @@ import { Agent } from '@mastra/core/agent';
 import { weatherTool } from '../tools/weather-tool';
 
 export const weatherAgent = new Agent({
-  name: "Weather Agent",
+  name: "weather agent",
   instructions: `You are a helpful weather assistant that provides accurate weather information.
 Your primary function is to help users get weather details for specific locations. When responding:
 - Always ask for a location if none is provided

@@ -14,7 +14,7 @@ const vectorQueryTool = createVectorQueryTool({
 });
  
 export const ragAgent = new Agent({
-  name: "RAG Agent",
+  name: "RAG agent",
   instructions:
     "You are a helpful assistant that answers questions based on the provided context. Keep your answers concise and relevant.",
   model: google('gemini-2.5-flash-lite'),

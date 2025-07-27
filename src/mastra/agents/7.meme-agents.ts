@@ -5,7 +5,7 @@ import { Memory } from '@mastra/memory';
 import { LibSQLStore } from '@mastra/libsql';
 
 export const memeGeneratorAgent = new Agent({
-  name: 'GeneratorMeme',
+  name: 'meme generator agent',
   instructions: `
     Kamu adalah asisten AI yang membantu mengubah keluhan menjadi meme unik yang bisa dibagikan. 
     

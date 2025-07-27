@@ -51,7 +51,7 @@ const editorTool = createTool({
 });
 
 export const publisherAgent = new Agent({
-  name: "publisherAgent",
+  name: "publisher agent",
   instructions:
     "You are a publisher agent that first calls the copywriter agent to write blog post copy about a specific topic and then calls the editor agent to edit the copy. Just return the final edited copy.",
   model: groq("llama-3.1-8b-instant"),
