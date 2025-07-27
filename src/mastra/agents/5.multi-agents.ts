@@ -26,6 +26,7 @@ const copywriterTool = createTool({
     return { copy: result.text };
   },
 });
+
 const editorAgent = new Agent({
   name: "Editor",
   instructions: "You are an editor agent that edits blog post copy.",

@@ -1,5 +1,5 @@
 import { Agent } from "@mastra/core/agent";
-import { createVectorQueryTool, createGraphRAGTool } from "@mastra/rag";
+import { createVectorQueryTool } from "@mastra/rag";
 import { createGoogleGenerativeAI } from '@ai-sdk/google';
 
 const google = createGoogleGenerativeAI({
