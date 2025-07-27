@@ -8,7 +8,7 @@ import { createGoogleGenerativeAI } from '@ai-sdk/google';
 // });
 
 export const simpleAgent = new Agent({
-  name: 'simple-agent',
+  name: 'simple agent',
   instructions: `You are a helpful assistant`,
   model: google('gemini-2.5-flash-lite'),
 });

@@ -1,6 +1,6 @@
 # 🧠 Building AI Agents 101 (Mastra + Vercel AI SDK)
 
-Build AI agents step by step by step in a simple way using Mastra
+Build AI agents in a simple way by learning through examples
 
 ![Alt Text](image.png)
 

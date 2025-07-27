@@ -21,7 +21,7 @@ const catFact = createTool({
 });
 
 export const catAgents = new Agent({
-  name: 'cat-agents',
+  name: 'cat agents',
   instructions: `You are a helpful cat expert assistant. When discussing cats, you should always include an interesting cat fact.
  
   Your main responsibilities:
